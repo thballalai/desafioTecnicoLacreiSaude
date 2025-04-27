@@ -102,4 +102,4 @@ Feature: Cadastro
         And Preencher confirmacao de senha
         And aceite os termos
         When Clicar no botão Cadastrar
-        Then Aparecerá mensagem de erro "Você deve ter 18 anos ou mais."
+        Then Aparecerá mensagem de erro "Você deve ter 18 anos ou mai."
