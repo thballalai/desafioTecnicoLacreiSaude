@@ -41,14 +41,14 @@ Os testes de responsividade foram realizados no site da Lacrei Saúde utilizando
 ## **Evidências**
 
 - **Simulação Mobile:**
-  [Evidência Mobile](https://github.com/thballalai/desafioTecnicoLacreiSaude/Responsividade/evidencias/video/teste-mobile360x740.mkv)
+  [Evidência Mobile](https://vimeo.com/1079073031)
 
   Foi identificado um defeito na exibição do campo de input para o código recebido via SMS, que ultrapassa as margens da tela.
 
   ![Evidência de defeito Mobile 01](https://github.com/thballalai/desafioTecnicoLacreiSaude/Responsividade/evidencias/printscreen/mobile-evidencia01.png)
 
 - **Simulação Tablet:**
-  [Evidência Tablet](https://github.com/thballalai/desafioTecnicoLacreiSaude/Responsividade/evidencias/video/teste-tablet360x740.mkv)
+  [Evidência Tablet](https://vimeo.com/1079073082)
 
   Foram identificados três defeitos:
 
@@ -65,7 +65,7 @@ Os testes de responsividade foram realizados no site da Lacrei Saúde utilizando
      ![Evidência de defeito Tablet 03](https://github.com/thballalai/desafioTecnicoLacreiSaude/Responsividade/evidencias/printscreen/tablet-evidencia03.png)
 
 - **Simulação Desktop:**
-  [Evidência Desktop](https://github.com/thballalai/desafioTecnicoLacreiSaude/Responsividade/evidencias/video/teste-desktop1920x1080.mkv)
+  [Evidência Desktop](https://vimeo.com/1079072986/d4af37078c)
 
   Como não foram identificados problemas, não há capturas de tela de erros.
 
