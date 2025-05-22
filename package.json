@@ -4,7 +4,8 @@
   "description": "A Lacrei Saúde é uma plataforma que busca democratizar o acesso seguro e confiável à saúde para a comunidade LGBTQIAPN+. Com o objetivo de contribuir com esse projeto tão admirável e, ao mesmo tempo, desenvolver minhas habilidades técnicas como analista de QA, estou participando deste desafio técnico proposto pela equipe da Lacrei como parte do processo seletivo para a vaga de voluntário.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:ci": "cross-env CYPRESS_COVERAGE=true vite build"
   },
   "keywords": [],
   "author": "",
