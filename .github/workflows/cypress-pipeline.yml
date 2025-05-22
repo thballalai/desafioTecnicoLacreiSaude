@@ -8,52 +8,19 @@ on:
     schedule:
         - cron: '0 18 * * 1,2,3,4,5'
 
-jobs:
-    #configuração inicial do ambiente. prerequisito para os demais jobs
-    install:
-        runs-on: ubuntu-latest
-        container:
-            image: cypress/browsers:22.15.1
-            options: --user 1001
-        steps:
-            - name: Checkout
-              uses: actions/checkout@v4
-
-            - name: Cypress install
-              uses: cypress-io/github-action@v6
-              with:
-                runTests: false
-            
-            #report estados da maquina
-            - run: npx cypress info
-            - run: node --version
-            - run: yarn build:ci
-
-            - name: Save build folder
-              uses: actions/upload-artifact@v4
-              with:
-                name: build
-                if-no-files-found: error
-                path: build
-    
+jobs:  
     ui-chrome-tests:
         runs-on: ubuntu-latest
         container:
             image: cypress/browsers:22.15.1
             options: --user 1001
-        needs: install
-        strategy:
-            fail-fast: false
         steps:
             - name: Checkout
               uses: actions/checkout@v4
-
-            - name: Download the build folders
-              uses: actions/download-artifact@v4
-              with:
-                name: build
-                path: build
             
+            - name: Install dependencies
+              uses: npm install
+
             - name: "UI Tests - Chrome"
               uses: cypress-io/github-action@v6
               with:
