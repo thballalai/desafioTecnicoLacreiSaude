@@ -27,7 +27,7 @@ jobs:
             #report estados da maquina
             - run: npx cypress info
             - run: node --version
-            - run: npm build:ci
+            - run: npx build:ci
 
             - name: Save build folder
               uses: actions/upload-artifact@v4
